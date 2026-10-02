@@ -1,0 +1,112 @@
+{
+ "no_v": [
+  {
+   "planet": "P1",
+   "equation": {
+    "a": 0.8558841659578209,
+    "e": 0.10672782057353754,
+    "omega": 1.3655557316211908,
+    "M0": 4.866008418455259
+   },
+   "derived_shape": "ellipse (e>0)",
+   "rmse_holdout": 0.014842575440009881,
+   "gen": 4
+  },
+  {
+   "planet": "P2",
+   "equation": {
+    "a": 0.8942719759989383,
+    "e": 0.48624939451972277,
+    "omega": 1.375078671636529,
+    "M0": 7.214805829926496
+   },
+   "derived_shape": "ellipse (e>0)",
+   "rmse_holdout": 0.015157802862982793,
+   "gen": 2
+  },
+  {
+   "planet": "P3",
+   "equation": {
+    "a": 1.142534050480041,
+    "e": 0.24592882712630446,
+    "omega": 3.858550238766891,
+    "M0": -0.9138669063551959
+   },
+   "derived_shape": "ellipse (e>0)",
+   "rmse_holdout": 0.014511413524122121,
+   "gen": 2
+  }
+ ],
+ "no_recombine": [
+  {
+   "planet": "P1",
+   "equation": {
+    "a": 0.8557236662126905,
+    "e": 0.10626832253356445,
+    "omega": 1.363422297394543,
+    "M0": -1.4186933023590191
+   },
+   "derived_shape": "ellipse (e>0)",
+   "rmse_holdout": 0.015677062292810094,
+   "gen": 4
+  },
+  {
+   "planet": "P2",
+   "equation": {
+    "a": 0.8943323901404713,
+    "e": 0.4864928489514662,
+    "omega": 1.37560751984818,
+    "M0": 0.9315690335736024
+   },
+   "derived_shape": "ellipse (e>0)",
+   "rmse_holdout": 0.0147070816510519,
+   "gen": 4
+  },
+  {
+   "planet": "P3",
+   "equation": {
+    "a": 1.142456123253165,
+    "e": 0.2460633458018772,
+    "omega": 3.8573775339577656,
+    "M0": -0.914155202522901
+   },
+   "derived_shape": "ellipse (e>0)",
+   "rmse_holdout": 0.013783016825335993,
+   "gen": 3
+  }
+ ],
+ "single_agent": {
+  "P1": {
+   "holdout_rmse": 0.015696694325009107,
+   "n_params": 27,
+   "interpretable_equation": false
+  },
+  "P2": {
+   "holdout_rmse": 0.01603191005088729,
+   "n_params": 27,
+   "interpretable_equation": false
+  },
+  "P3": {
+   "holdout_rmse": 0.01599825514045245,
+   "n_params": 27,
+   "interpretable_equation": false
+  }
+ },
+ "survivor_conic_fraction": {
+  "normal": {
+   "P1": 1.0,
+   "P2": 1.0,
+   "P3": 1.0
+  },
+  "no_v": {
+   "P1": 0.125,
+   "P2": 0.375,
+   "P3": 0.125
+  },
+  "no_recombine": {
+   "P1": 1.0,
+   "P2": 1.0,
+   "P3": 1.0
+  }
+ }
+}

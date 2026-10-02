@@ -1,0 +1,53 @@
+{
+ "equation_first": [
+  "P1: conic  a=0.8557 e=0.1063 omega=1.3634 M0=-1.4187",
+  "P2: conic  a=0.8943 e=0.4865 omega=1.3756 M0=0.9316",
+  "P3: conic  a=1.1425 e=0.2461 omega=3.8574 M0=-0.9142"
+ ],
+ "verdicts": [
+  {
+   "planet": "P1",
+   "equation": {
+    "a": 0.8557236662126905,
+    "e": 0.10626832253356445,
+    "omega": 1.363422297394543,
+    "M0": -1.4186933023590191
+   },
+   "derived_shape": "ellipse (e>0)",
+   "rmse_holdout": 0.015677062292810094,
+   "gen": 4
+  },
+  {
+   "planet": "P2",
+   "equation": {
+    "a": 0.8943323901404713,
+    "e": 0.4864928489514662,
+    "omega": 1.37560751984818,
+    "M0": 0.9315690335736024
+   },
+   "derived_shape": "ellipse (e>0)",
+   "rmse_holdout": 0.0147070816510519,
+   "gen": 4
+  },
+  {
+   "planet": "P3",
+   "equation": {
+    "a": 1.142456123253165,
+    "e": 0.2460633458018772,
+    "omega": 3.8573775339577656,
+    "M0": -0.914155202522901
+   },
+   "derived_shape": "ellipse (e>0)",
+   "rmse_holdout": 0.013783016825335993,
+   "gen": 3
+  }
+ ],
+ "elapsed_sec": 6.1,
+ "config": {
+  "generations": 12,
+  "no_v": false,
+  "no_recombine": true,
+  "seed": 7,
+  "out": "_noe"
+ }
+}
