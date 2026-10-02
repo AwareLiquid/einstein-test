@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400">
+<rect width="100%" height="100%" fill="#0e0e12"/>
+<text x="60" y="24" fill="#ebebeb" font-size="14">P2 — best holdout RMSE（红） vs 圆锥曲线幸存占比（青）</text>
+<polyline points="60.0,85.5 233.3,85.5 406.7,85.5 580.0,85.5" fill="none" stroke="#ff5a5a" stroke-width="2"/>
+<polyline points="60.0,200.0 233.3,60.0 406.7,60.0 580.0,60.0" fill="none" stroke="#3ad6c8" stroke-width="1.5" stroke-dasharray="5 3"/>
+<line x1="60" y1="340" x2="580" y2="340" stroke="#555"/>
+<line x1="60" y1="60" x2="60" y2="340" stroke="#555"/>
+<text x="52" y="68" fill="#888" font-size="10" text-anchor="end">1.0</text>
+<text x="52" y="340" fill="#888" font-size="10" text-anchor="end">0</text>
+<text x="580" y="356" fill="#888" font-size="10" text-anchor="end">gen 4</text>
+</svg>

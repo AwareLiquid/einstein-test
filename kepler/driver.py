@@ -55,11 +55,15 @@ def run_planet(name: str, obs: dict, rng: np.random.Generator, gens: int,
     for gen in range(1, gens + 1):
         if gen == 1:
             cands = b_hypothesis.generate(rng, gen, n_cand, prior)
+        elif use_recombine:
+            cands = e_recombine.recombine(rng, survivors, n_cand, prior)
         else:
-            cands = (e_recombine.recombine(rng, survivors, n_cand, prior)
-                     if use_recombine
-                     else b_hypothesis.generate(rng, gen, n_cand, prior,
-                                                survivors=survivors))
+            # 干净化"关重组"：幸存者**原样复制**（无交叉也无变异）+ 新随机。
+            # 这样假设集合基本冻结，只有全新随机注入——真正检验均轮陷阱。
+            cands = list(survivors)
+            while len(cands) < n_cand:
+                cands.append(b_hypothesis.random_candidate(
+                    rng, rng.choice(b_hypothesis.TYPES), prior))
         scores = [d_verify.score(h, obs, split) for h in cands]
         v = v_value.value(scores, use_v=use_v)
         order = np.argsort(-v)
