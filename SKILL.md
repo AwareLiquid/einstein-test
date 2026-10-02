@@ -1,5 +1,5 @@
 ---
-name: einstein-test-skill
+name: einstein-test
 description: >-
   Model R&D knowledge base for the AwareLiquid research line — the Einstein Test as the
   north-star capability target for abductive paradigm-shift intelligence (溯因范式跃迁), plus the
